@@ -1,0 +1,5 @@
+[phpextensions]
+extensions = ["curl", "json", "mbstring", "openssl"]
+
+[start]
+command = "chmod -R 755 /app && php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf"
